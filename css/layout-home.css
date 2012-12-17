@@ -1,0 +1,290 @@
+/**
+Template page d'accueil custom
+Diapo Panoramique
+ */
+/*Taille en em avec base 100% = 16px soit Xpx/16=Xem
+Si base 62.5% alors 990/10=99em*/
+#header-inner{
+	margin:auto;
+	height:auto;
+	width:70.75em;/*990/16=61.875 em*/
+	background:none;
+	
+
+}
+/*Partie gauche du header*/
+#headHaut{
+	width:70em;
+	height:3.438em;
+	float:none;
+	display:block;
+	margin:0;
+	
+}
+#logoHead{
+	height:3.4em !important;
+	width:18.9em;
+	float:left;
+	display:block;
+	margin:0;
+}
+#logoHead img{
+	
+	padding:0;
+	margin:0;
+}
+/*Menu pictos header*/
+#menuImg{
+	height:1.875em;
+	width:37.5em;
+	float:right;
+	background:transparent;
+	padding:1.375em 0 0;
+
+}
+#navPicto{
+border:0;
+height:auto;
+width:auto;
+
+}
+
+#navPicto td{
+border:0;
+height:1.563em;
+width:auto;
+display:block;
+float:left;
+padding:0.250em;
+}
+
+#navPicto a {border:0;font-family: arista,Trebuchet MS, sans-serif;
+    text-align: center;color:#94127F;font-size: 1.438em;text-decoration: none;}
+#navPicto a:hover{color: #F29400;}
+/************PARTIE BASSE**************/
+#headBas{
+	width:auto;
+	height:11em;/*Nice menu:108px - Superfish:130px=11em*/
+	float:none;
+	display:block;
+	margin:0.313em 0 0 0;
+	
+	
+}
+/*Menu principal haut du header*/
+#menuHead{
+	float:none;
+	height:11em;
+	padding:0;
+        background:#ECECED url(../images/bg_menu_rp.gif) repeat-x top left;
+}
+#headSearch{
+text-align:right;
+margin: 0.125em 0 0 0;
+background: url(../images/bg_recherche.gif) no-repeat left 0.313em;
+display: block;
+float: right;
+width: 19em;
+}
+#search{
+  
+  height: 1.8em;
+  display: block;
+  padding:0 0.188em 0 0;
+
+}
+#name-and-slogan{
+	height:20px;
+	width:61.875em;
+	vertical-align:bottom;
+	float:right;
+}
+#site-name a{
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+}
+
+#site-name{
+padding:160px 0 0 0.625em;
+margin:0;
+}
+#site-slogan{
+color:white;
+display:block;
+float:left;
+height:1.1em;
+padding:0.1em 0 0 1em;
+width:32em;
+}
+
+#site-slogan a{
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+}
+
+
+/*FIN CSS HEADER*/
+/*****************/
+#block-views-liste_annonce_accueil-block_1,
+.view-liste-annonce-accueil
+{height: 5em;}
+#views_slideshow_cycle_main_liste_annonce_accueil-block_1{margin: 0;}
+#annonce{
+    color: #E2017B;
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 1em 0 0;
+    text-align: center;
+   width: 61.875em;
+   margin: auto -14%;
+   height: 5em;
+}
+#annonce a{
+    color: #93117E;
+    text-decoration: none;
+    font-weight: bold;
+}
+#annonce a:hover{
+    text-decoration: underline;
+}
+/********************/
+/*ZONES PAGE ACCUEIL DIAPO PANORAMIQUE*/
+#content-bottom-home a{
+    color: gray;
+    font-weight: bold;
+}
+#HPDiapo{
+width: auto;
+height: auto;
+padding:0.625em 0 0;
+
+}
+/****************/
+#BasGaucheHP{
+        width:54%;
+        float:left;
+	background:none;
+	color:black;
+
+}
+
+#BasDroitHP{
+	width:46% !important;
+        width: 43%;
+	float:right;
+	background:none;
+        margin: 0.625em 0;
+}
+#BasGaucheHP ul li{
+    list-style: square;
+}
+#BasGaucheHP a,#BasDroitHP a{
+text-decoration:none;
+}
+#BasGaucheHP a:hover,#BasDroitHP a:hover{
+text-decoration:underline;
+}
+#BasDroitHP h3,#BasGaucheHP h3{
+    text-align: center;
+    color: #E7512F;
+}
+#BasDroitHP h2,#BasGaucheHP h2{
+    text-align: center;
+    color: #E7512F;
+}
+/*---DIAPORAMA HOMEPAGE TEXTE DYNAMIQUE  PANORAMIQUE----*/
+#transparency{
+background:none repeat scroll 0 0 #F29400;/*Couleur du fond*/
+height:4.063em;
+bottom:-0.375em;
+left:0.75em;
+position:absolute;
+width:60.500em;
+z-index:15;
+opacity:0.0;/*0.6*/
+-moz-opacity : 0.0;
+-ms-filter: "alpha(opacity=00)"; /* IE 8 */
+filter : alpha(opacity=00); /* IE < 8 */
+}
+#contenu-diapo,.view-diaporama-homepage .views-field-teaser{
+position:relative;
+bottom: 10%;
+left: 0.625em;
+color: white;
+}
+#contenu-diapo{top: -2.500em;z-index:21;}
+.view-diaporama-homepage .views-field-teaser{top: -4.500em;z-index:20;}
+
+#contenu-diapo h2{
+color: white;
+padding:0.313em;
+font-family: Arista,Trebuchet MS,sans serif;
+
+}
+#contenu-diapo a{
+color: white;
+text-decoration: none;
+}
+.view-diaporama-homepage,.views_slideshow_cycle_slide,
+.view-diaporama-homepage .views-row{
+height:12.500em;
+margin:0 auto;
+position:inherit;
+width:61.125em;
+}
+
+.view-diaporama-homepage img{height: 12.750em;width: 61.875em;margin: 0;}
+#views_slideshow_singleframe_main_diaporama_homepage-block_1
+{padding: 0;}
+#views_slideshow_singleframe_teaser_section_diaporama_homepage-block_1,
+#views_slideshow_cycle_teaser_section_diaporama_homepage-block_2
+{position: relative;z-index:1;}
+
+/*---------------------------------------------------------
+--------------  HOMEPAGE POUR DIAPO3D
+-----------------------------------------------------------
+*/
+#Diapo3D{
+    margin: 0 auto;
+    
+     
+}
+#Diapo3DReg{
+    width: 880px;
+    margin: 0 auto;
+    display: block;
+}
+/*
+HOMEPAGE SLIDESHOW DERNIERES VDL (Views2)=======================
+*/
+#views_slideshow_singleframe_main_HP_slideshow-block_1 .views-field-title a{
+    color:#93117E;font-size: 0.875em;text-decoration: none;
+}
+#views_slideshow_singleframe_main_HP_slideshow-block_1 .views-field-title a:hover{
+    text-decoration: underline;
+}
+#views_slideshow_singleframe_main_HP_slideshow-block_1 img{
+    padding: 0.125em;
+    border: 0.188em solid #F29400;
+}
+/*
+HOMEPAGE SLIDESHOW DERNIERES VDL (Views3) =======================
+*/
+#block-views-HP_slideshow-block_1,#views_slideshow_cycle_main_HP_slideshow-block_1,
+#views_slideshow_cycle_teaser_section_HP_slideshow-block_1,
+#views_slideshow_cycle_teaser_section_HP_slideshow-block_1 .views_slideshow_cycle_slide{
+    width: 32em;height: 24em;margin: 0;
+}
+#views_slideshow_cycle_main_HP_slideshow-block_1 .views-field-title a{
+    color:#93117E;font-size: 0.875em;text-decoration: none;
+}
+#views_slideshow_cycle_main_HP_slideshow-block_1 .views-field-title a:hover{
+    text-decoration: underline;
+}
+#views_slideshow_cycle_main_HP_slideshow-block_1 img{
+    padding: 0.125em;
+    border: 0.188em solid #F29400;
+}
