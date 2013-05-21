@@ -1,5 +1,6 @@
 <?php if ($footer || $footer_message || $secondary_links): ?>
- 
+<div class="container">
+          <div class="row">   
 <div id="footer"><div class="section">
 
         <?php print theme(array('links__system_secondary_menu', 'links'), $secondary_links,
@@ -21,7 +22,7 @@
         <?php print $footer; ?>
 
       </div></div><!-- /.section, /#footer -->
-    
+      </div> <!-- /row -->	 </div> <!-- /container -->
     <?php endif; ?>
 
   </div></div><!-- /#page, /#page-wrapper -->

@@ -5,7 +5,9 @@ include ($theme_path.'/includes/inc_header.php');
  <!-- ______________________ LAYOUT PAGE LYCEE OVERRIDE PAR NODE.TPL CUSTOM _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
 
-      <div id="contentPage">
+      <div id="main-wrapper"><div id="main" class="clearfix<?php if ($primary_links || $navigation) { print ' with-navigation'; } ?>">
+
+      <div id="content" class="column"><div class="section">
 
           <!-- ______________________ CONTENT TOP _______________________ -->
       <?php if ($breadcrumb ||$content_top): ?>
@@ -81,7 +83,9 @@ include ($theme_path.'/includes/inc_header.php');
               <?php print $content_bottom; ?>
             </div><!-- /#content-bottom -->
           <?php endif; ?>
-	 </div> <!-- /contentPage -->
+              </div></div><!-- /.section, /#content -->
+            
+	</div></div><!-- /#main, /#main-wrapper -->
 <?php
 $theme_path = drupal_get_path('theme', 'zensub_cg');
 include ($theme_path.'/includes/inc_footer.php');
